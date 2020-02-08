@@ -74,7 +74,7 @@ Sample of Event Storming:
 SAMPLE OF DDD -> Divided into Aggregations and Bounded context:
 
 Aggregations:
-￼![][src/main/resources/aggregations.png]
+￼![][https://github.com/leinadpb/kafka/blob/master/src/main/resources/aggregations.png]
 
 Bounded context with aggregations:
 ￼![][src/main/resources/bounded_ctx.png]
@@ -179,7 +179,7 @@ AVRO -> Data serialization system that serializes to Binary and uses Schema IDL
 Uses JSON-Based schemas to define data structures.
 No human readable
 Binary
-![][src/main/resources/avro.png]
+![][https://github.com/leinadpb/kafka/blob/master/src/main/resources/avro.png]
 ￼
 
 Schema Registry
