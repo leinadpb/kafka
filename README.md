@@ -69,7 +69,7 @@ For instance, “Received” in an order system has a completing different meani
 Web-based apps to help with Event Storming and DDD: https://miro.com/app/
 
 Sample of Event Storming:
-![][src/main/resources/event_storming.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/event_storming.png" />
 
 SAMPLE OF DDD -> Divided into Aggregations and Bounded context:
 
