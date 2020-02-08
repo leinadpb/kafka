@@ -69,15 +69,15 @@ For instance, “Received” in an order system has a completing different meani
 Web-based apps to help with Event Storming and DDD: https://miro.com/app/
 
 Sample of Event Storming:
-![][src/main/resources/event_storming.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/event_storming.png" />
 
 SAMPLE OF DDD -> Divided into Aggregations and Bounded context:
 
 Aggregations:
-￼![][src/main/resources/aggregations.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/aggregations.png" />
 
 Bounded context with aggregations:
-￼![][src/main/resources/bounded_ctx.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/bounded_ctx.png" />
 
 Kafka
 Distributed Streaming Platform
@@ -101,12 +101,12 @@ A Broker should ALWAYS resides in a dedicated server with dedicated resources, s
 A Broker is nothing more than a process which lives on top of the operating system.
 When a message is received across the network, the broker stores it into the hard drive of that machine. When that specific message has been requested, the Broker will then copy it form the File System and will transmitted to the application that requested it.
 Everything is done at the binary level. An messages are nothing more that bytes received over the network.
-![][src/main/resources/broker.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/broker.png" />
 
 For production apps, where load will be really high, multiple Brokers have to need added under the same context, this distribution is called a Cluster.
 
 So, here enters the Zookeeper as a centralized server where all the brokers are connected in order to ensure distributed transactions:
-![][src/main/resources/zookeeper.png]
+<img src="hhttps://github.com/leinadpb/kafka/blob/master/src/main/resources/zookeeper.png" />
 
 Messages in Kafka ara named Record.
 
@@ -129,7 +129,7 @@ Messages can be categorized:
 Sample scenario:
 Topics: Account, Cart Payment
 
-![][src/main/resources/topics.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/topics.png" />
 
 Types of Topics:
 
@@ -149,12 +149,12 @@ Replicated partitions
 Replicas of original partitions are stored in each Broker. This avoids data loss in case a Broker stop working, ensuring the integrity of the data.
 A copy of the message will automatically sent to the replica in the other Broker.
 
-![][src/main/resources/rep_partitions.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/rep_partitions.png" />
 
 Kafka Producer
 Is an app that creates and transfer events to the Kafka cluster.
 Serialization of the Record (key and value) needs to be done at this stage before sending it to Kafka.
-![][src/main/resources/producer.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/producer.png" />
 
 Kafka Consumer
 When new messages has arrived to the listeners, the Kafka consumers will received them and consumes them accordingly.
@@ -179,13 +179,13 @@ AVRO -> Data serialization system that serializes to Binary and uses Schema IDL
 Uses JSON-Based schemas to define data structures.
 No human readable
 Binary
-![][src/main/resources/avro.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/avro.png" />
 ￼
 
 Schema Registry
 Persisten schemas and share them between Producers and Consumers.
 
-![][src/main/resources/schema_registry.png]
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/schema_registry.png" />
 
 The producer or consumer ask a sham to the SR (Schema Registry), using a standard format, ex: <name>-key.
 The Schema ID then, is the ID of the message sent to Kafka, so the consumer (with this ID) can ask for the corresponding schema in the Schema Registry, so deserialization can take place.
