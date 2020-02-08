@@ -1,0 +1,20 @@
+{
+  "type": "record",
+  "namespace": "com.leinad.models",
+  "name": "User",
+  "fields": [
+    {
+      "name": "userId",
+      "type": "string"
+    },
+    {
+      "name": "username",
+      "type": "string"
+    },
+    {
+      "name": "dateOfBirth",
+      "type": "int",
+      "logicalType": "date"
+    }
+  ]
+}
