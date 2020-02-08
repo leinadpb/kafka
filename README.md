@@ -149,7 +149,7 @@ Replicated partitions
 Replicas of original partitions are stored in each Broker. This avoids data loss in case a Broker stop working, ensuring the integrity of the data.
 A copy of the message will automatically sent to the replica in the other Broker.
 
-<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/rep_partitions.png" />
+<img src="https://github.com/leinadpb/kafka/blob/master/src/main/resources/rep_partitions_2.png" />
 
 Kafka Producer
 Is an app that creates and transfer events to the Kafka cluster.
