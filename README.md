@@ -200,6 +200,48 @@ Setting up Schema Registry
 Github: <a href="https://github.com/confluentinc/schema-registry.git">https://github.com/confluentinc/schema-registry.git</a>
 
 Checkout to the latest version.
-Run: man package
+Run: mvn package
 
 Now is able to run: bin/schema-registry-start config/schema-registry.properties
+
+
+Streaming
+Is processing data events one by one as they arrive into our system.
+
+Kafka Stream: Composition of a consumer and a producer. This is: Consumes from a specific topic, apply business rules and produce to another topic, where other consumer will pick it up and process it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
